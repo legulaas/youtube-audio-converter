@@ -1,7 +1,15 @@
 # YouTube Audio Converter - Dependências Python
 # Instalação: pip install -r requirements.txt
 
+# Dependências principais
 yt-dlp>=2023.3.4
+
+# Para geração do executável
+pyinstaller>=5.0
+
+# Dependências opcionais para melhor funcionalidade
+requests>=2.28.0
+urllib3>=1.26.0
 
 # Nota: FFmpeg também é necessário, mas deve ser instalado separadamente
 # no sistema operacional (veja README.md para instruções)

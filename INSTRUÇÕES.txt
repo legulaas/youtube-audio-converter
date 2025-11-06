@@ -1,0 +1,54 @@
+# YouTube Audio Converter - Instruções Rápidas
+=====================================================
+
+## 🚀 COMO USAR
+
+### Para usuários finais (recomendado):
+1. Execute: build.bat
+2. Aguarde a geração do executável
+3. Use o arquivo: dist\YouTube Audio Converter.exe
+
+### Para desenvolvedores:
+- Interface gráfica: python gui.py  
+- Linha de comando: python main.py
+
+## 📋 REQUISITOS
+
+### Obrigatório:
+- FFmpeg instalado no sistema
+- Conexão com internet
+
+### Para gerar executável:
+- Python 3.6+ 
+- Dependências: pip install -r requirements.txt
+
+## 🔧 BUILDS
+
+- **build.bat** - Build completo com todas otimizações
+- **quick_build.bat** - Build rápido para teste
+
+## ❓ PROBLEMAS COMUNS
+
+### "FFmpeg não encontrado"
+- Baixe FFmpeg: https://ffmpeg.org/download.html
+- Adicione ao PATH do Windows
+
+### "Erro no download"
+- Verifique a URL do YouTube
+- Teste sua conexão com internet
+- Tente uma URL diferente
+
+### "Erro ao gerar executável"
+- Certifique-se que todas as dependências estão instaladas
+- Execute: pip install -r requirements.txt
+- Tente o quick_build.bat primeiro
+
+## 📞 SUPORTE
+
+- Repositório: https://github.com/legulaas/youtube-audio-converter
+- Issues: https://github.com/legulaas/youtube-audio-converter/issues
+
+=====================================================
+Autor: Matheus Fragoso (@legulaas)
+Versão: 1.0.0
+=====================================================

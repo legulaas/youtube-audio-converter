@@ -1,18 +1,23 @@
 # 🎵 YouTube Audio Converter
 
-Conversor simples e eficiente de vídeos do YouTube para arquivos MP3 de alta qualidade.
+Conversor simples e eficiente de vídeos do YouTube para arquivos MP3 de alta qualidade, com **interface gráfica** e **executável standalone**.
 
 ## 📋 Descrição
 
-Este script Python permite baixar o áudio de vídeos do YouTube e salvá-los como arquivos MP3 com qualidade máxima (320 kbps). Utiliza as bibliotecas `yt-dlp` para download e `FFmpeg` para conversão de áudio.
+Este projeto permite baixar o áudio de vídeos do YouTube e salvá-los como arquivos MP3 com qualidade máxima (320 kbps). Oferece duas interfaces: linha de comando e interface gráfica intuitiva. Utiliza as bibliotecas `yt-dlp` para download e `FFmpeg` para conversão de áudio.
 
 ## ✨ Funcionalidades
 
+- ✅ **Interface gráfica amigável** com tkinter
+- ✅ **Executável standalone** (não precisa instalar Python)
 - ✅ Download de áudio em alta qualidade (320 kbps)
 - ✅ Conversão automática para MP3
-- ✅ Interface simples via linha de comando
+- ✅ Interface via linha de comando (modo clássico)
+- ✅ Seletor de pasta de destino
+- ✅ Barra de progresso e status em tempo real
 - ✅ Suporte a diversos formatos de URL do YouTube
 - ✅ Nomenclatura automática baseada no título do vídeo
+- ✅ Validação de entrada e tratamento de erros
 
 ## 🔧 Requisitos
 
@@ -53,6 +58,22 @@ pip install yt-dlp
 
 ## 🚀 Uso
 
+### 🖥️ Interface Gráfica (Recomendado)
+
+**Usando o executável (mais simples):**
+1. Baixe o arquivo `YouTube Audio Converter.exe` da seção Releases
+2. Execute o arquivo (não é necessário instalar Python)
+3. Cole a URL do vídeo do YouTube
+4. Escolha a pasta de destino
+5. Clique em "Baixar Áudio"
+
+**Executando o código Python:**
+```bash
+python gui.py
+```
+
+### 💻 Linha de Comando (Modo Clássico)
+
 Execute o script:
 ```bash
 python main.py
@@ -65,7 +86,7 @@ Cole a URL do vídeo do YouTube: https://www.youtube.com/watch?v=exemplo
 
 O arquivo MP3 será salvo no mesmo diretório do script com o nome do vídeo.
 
-### Uso Programático
+### 🔧 Uso Programático
 
 Você também pode importar e usar a função em seus próprios scripts:
 
@@ -77,17 +98,69 @@ baixar_audio("https://www.youtube.com/watch?v=exemplo")
 
 # Baixar para um diretório específico
 baixar_audio("https://www.youtube.com/watch?v=exemplo", pasta_destino="./musicas")
+
+# Com callback de status para interface personalizada
+def meu_callback(status):
+    print(f"Status: {status}")
+
+baixar_audio(
+    "https://www.youtube.com/watch?v=exemplo", 
+    pasta_destino="./musicas",
+    callback_status=meu_callback
+)
 ```
 
-## 📂 Estrutura do Projeto
+## 🖼️ Screenshots
+
+### Interface Gráfica
+- Campo para URL do YouTube
+- Seletor de pasta de destino  
+- Barra de progresso com status em tempo real
+- Botões para limpar campos e abrir pasta
+- Área de log com informações detalhadas
+
+### Recursos da GUI
+- ✅ Validação automática de URLs
+- ✅ Progresso visual do download
+- ✅ Integração com explorador de arquivos
+- ✅ Interface responsiva e intuitiva
+- ✅ Tratamento de erros amigável
+
+## � Gerar Executável
+
+Para gerar seu próprio executável:
+
+### Método Simples
+```bash
+# Execute o script de build (instala dependências automaticamente)
+build.bat
+```
+
+### Método Manual
+```bash
+# Instale as dependências
+pip install -r requirements.txt
+
+# Gere o executável
+python -m PyInstaller --onefile --windowed --name="YouTube Audio Converter" gui.py
+```
+
+O executável será gerado na pasta `dist/`.
+
+## �📂 Estrutura do Projeto
 
 ```
 youtube-audio-converter/
 │
-├── main.py           # Script principal
-├── README.md         # Documentação
-├── requirements.txt  # Dependências Python
-└── .gitignore       # Arquivos ignorados pelo Git
+├── main.py                        # Script principal (linha de comando)
+├── gui.py                         # Interface gráfica
+├── README.md                      # Documentação
+├── requirements.txt               # Dependências Python
+├── youtube-audio-converter.spec   # Configuração PyInstaller
+├── version_info.txt              # Informações da versão
+├── build.bat                     # Script de build automático
+├── quick_build.bat              # Script de build rápido
+└── .gitignore                   # Arquivos ignorados pelo Git
 ```
 
 ## ⚙️ Configurações
