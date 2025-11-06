@@ -122,16 +122,11 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 4. Push para a branch (`git push origin feature/MinhaFeature`)
 5. Abrir um Pull Request
 
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
 ## 👤 Autor
 
-**[Seu Nome]**
+**Matheus Fragoso**
 
 - GitHub: [@legulaas](https://github.com/legulaas)
-- LinkedIn: [seu-perfil](https://linkedin.com/in/seu-perfil)
 
 ## 🙏 Agradecimentos
 
@@ -141,3 +136,4 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ---
 
 ⭐ Se este projeto foi útil para você, considere dar uma estrela!
+
