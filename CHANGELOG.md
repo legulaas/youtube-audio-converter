@@ -2,6 +2,18 @@
 
 Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
+## [1.0.1] - 2025-11-06
+
+### ✨ Adicionado
+- **Ícone personalizado** para o executável (nota musical + MP3 em fundo vermelho)
+- **Script automatizado** de geração de ícone usando Pillow
+- **Suporte a múltiplos tamanhos** de ícone (16x16 até 256x256)
+
+### 🔧 Melhorado
+- **Script de build** agora detecta automaticamente se há ícone disponível
+- **Qualidade visual** do executável com ícone profissional
+- **Experiência do usuário** mais polida
+
 ## [1.0.0] - 2025-11-06
 
 ### ✨ Adicionado

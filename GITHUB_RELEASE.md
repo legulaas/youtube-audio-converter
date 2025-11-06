@@ -18,8 +18,8 @@ git push origin main
 
 ### 2. Criar Tag da Versão
 ```bash
-git tag -a v1.0.0 -m "YouTube Audio Converter v1.0.0"
-git push origin v1.0.0
+git tag -a v1.0.1 -m "YouTube Audio Converter v1.0.1 - Ícone personalizado"
+git push origin v1.0.1
 ```
 
 ### 3. Criar Release no GitHub
@@ -29,16 +29,16 @@ git push origin v1.0.0
 3. **Clique "Create a new release"**
 4. **Preencha os dados**:
 
-   **Tag version:** `v1.0.0`
-   **Release title:** `🎵 YouTube Audio Converter v1.0.0 - Interface Gráfica + Executável`
+   **Tag version:** `v1.0.1`
+   **Release title:** `🎵 YouTube Audio Converter v1.0.1 - Interface Gráfica + Executável com Ícone`
    
    **Description:** (copie o conteúdo de RELEASE_NOTES.md)
 
 ### 4. Upload do Executável
 
 **Na seção "Attach binaries":**
-- **Arquivo**: `dist/YouTube-Audio-Converter-v1.0.0.exe`
-- **Nome sugerido**: `YouTube-Audio-Converter-v1.0.0-Windows.exe`
+- **Arquivo**: `dist/YouTube-Audio-Converter-v1.0.1.exe`
+- **Nome sugerido**: `YouTube-Audio-Converter-v1.0.1-Windows.exe`
 
 ### 5. Configurações Recomendadas
 

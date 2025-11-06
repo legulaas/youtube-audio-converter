@@ -1,10 +1,11 @@
-# YouTube Audio Converter v1.0.0 🎵
+# YouTube Audio Converter v1.0.1 🎵
 
 ## 📥 Download Rápido
 
 **Para usuários finais (recomendado):**
-- Baixe: `YouTube-Audio-Converter.exe` (18.5 MB)
+- Baixe: `YouTube-Audio-Converter-v1.0.1.exe` (18.5 MB)
 - Execute diretamente - não precisa instalar Python!
+- **Novo**: Ícone personalizado no executável
 
 **Para desenvolvedores:**
 - Baixe o código fonte completo
@@ -24,6 +25,7 @@
 - ✅ **Arquivo único** - fácil de distribuir
 - ✅ **Todas as dependências incluídas** (exceto FFmpeg)
 - ✅ **Interface moderna** e responsiva
+- 🆕 **Ícone personalizado** no executável (nota musical + MP3)
 
 ## ⚙️ Requisitos do Sistema
 
@@ -39,8 +41,8 @@
 ## 📋 Como usar
 
 ### Para Usuários Finais:
-1. Baixe `YouTube-Audio-Converter.exe`
-2. Execute o arquivo
+1. Baixe `YouTube-Audio-Converter-v1.0.1.exe`
+2. Execute o arquivo (agora com ícone personalizado!)
 3. Cole a URL do vídeo do YouTube
 4. Escolha a pasta de destino
 5. Clique em "Baixar Áudio"

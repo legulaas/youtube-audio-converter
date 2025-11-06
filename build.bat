@@ -47,11 +47,20 @@ echo [INFO] Limpando builds anteriores...
 if exist "build" rmdir /s /q "build" 2>nul
 if exist "dist" rmdir /s /q "dist" 2>nul
 
+:: Verificar se existe ícone
+if exist "app_icon.ico" (
+    echo [INFO] Icone encontrado: app_icon.ico
+    set "ICON_PARAM=--icon=app_icon.ico"
+) else (
+    echo [WARNING] Icone nao encontrado, gerando sem icone
+    set "ICON_PARAM="
+)
+
 :: Gerar executável usando python -m
 echo [INFO] Gerando executavel...
-echo [INFO] Comando: python -m PyInstaller --onefile --windowed --name="YouTube Audio Converter" gui.py
+echo [INFO] Comando: python -m PyInstaller --onefile --windowed --name="YouTube Audio Converter" %ICON_PARAM% gui.py
 
-python -m PyInstaller --onefile --windowed --name="YouTube Audio Converter" gui.py
+python -m PyInstaller --onefile --windowed --name="YouTube Audio Converter" %ICON_PARAM% gui.py
 
 if %errorlevel% neq 0 (
     echo.
